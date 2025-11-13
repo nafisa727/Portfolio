@@ -1,320 +1,246 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-       <div class="md:ml-12 md:mr-12 justify-center md:mt-10">
-        <div class="flex">
-            <div class="ml-20">
-                <img src="Logo (1).png" alt="">
-            </div>
-            <div class="flex gap-32">
-                <ul class="hidden md: flex gap-32">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SERVICE</a></li>
-                    <li><a href="">PAGES</a></li>
-                </ul>
-                <div>
-                    <img src="Contact Us.png" alt="">
-                </div>
-            </div>
-        </div>
-       </div> 
-    </header>
+<body class="font-sans text-gray-800">
 
+  <!-- Header -->
+  <header class="py-6 px-6 md:px-12 flex items-center justify-between">
+    <img src="Logo (1).png" alt="Logo" class="h-10">
+    <nav class="hidden md:flex gap-10 text-gray-700 uppercase text-sm font-semibold">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Service</a>
+      <a href="#">Pages</a>
+    </nav>
+    <img src="Contact Us.png" alt="Contact" class="h-8">
+  </header>
 
-
-     
-    <div class=" ml-196 mr-12">
-        <div class="mt-20">
-            <div>
-                <img src="Remove-BG-attractive-naked-asian-girl-in-floral-wreath-isol-2023-11-27-04-49-21-utc 1 (1).png" alt="">
-            </div>
-        </div>
+  <!-- Hero Section -->
+  <section class="container mx-auto px-6 md:px-12 mt-12 grid md:grid-cols-2 items-center gap-8">
+    <div class="order-2 md:order-1 text-center md:text-left">
+      <h1 class="text-sky-500 uppercase font-semibold">The Beauty Center</h1>
+      <h2 class="text-4xl md:text-6xl font-bold mt-4">Suitable for all <br> skin problems</h2>
+      <div class="flex justify-center md:justify-start items-center gap-5 mt-6">
+        <button class="bg-sky-500 text-white px-6 py-2 rounded-lg hover:bg-sky-600 transition">Book Now</button>
+        <span>or</span>
+        <img src="Play Video - Btn.png" alt="Play" class="h-10">
+      </div>
+      <p class="text-gray-500 mt-6">
+        Care for skin and natural beauty through professional treatments <br class="hidden md:block">
+        using natural products.
+      </p>
     </div>
 
-    <div class="ml-12 mr-12 -mt-128">
+    <div class="order-1 md:order-2 flex justify-center">
+      <img src="Remove-BG-attractive-naked-asian-girl-in-floral-wreath-isol-2023-11-27-04-49-21-utc 1 (1).png" alt="Hero" class="w-80 md:w-[28rem]">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="container mx-auto px-6 md:px-12 mt-20 text-center">
+    <h1 class="text-sky-400 uppercase font-semibold">Our Services</h1>
+    <h2 class="text-3xl md:text-5xl font-bold mt-3">Beauty Rituals of Our Offer</h2>
+
+    <div class="grid md:grid-cols-3 gap-10 mt-10">
+      <div>
+        <img src="1.png" alt="Facial treatments" class="mx-auto">
+        <h3 class="text-emerald-500 mt-4 font-medium">Facial Treatments</h3>
+        <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div>
+        <img src="2.png" alt="Skin Tightening" class="mx-auto">
+        <h3 class="text-indigo-500 mt-4 font-medium">Skin Tightening</h3>
+        <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="text-indigo-500 inline-block mt-3 border-b border-indigo-500">Learn More</a>
+      </div>
+
+      <div>
+        <img src="1.png" alt="Healthy Products" class="mx-auto">
+        <h3 class="text-cyan-500 mt-4 font-medium">Healthy Products</h3>
+        <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container mx-auto px-6 md:px-12 mt-24 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-sky-400 uppercase font-semibold">About Us</h1>
+      <h2 class="text-4xl md:text-6xl font-bold mt-3">Crafting Beauty <br> Beyond Boundaries</h2>
+      <p class="text-gray-500 mt-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <button class="mt-6 bg-emerald-400 text-white px-6 py-2 rounded-lg hover:bg-emerald-500 transition">Discover More</button>
+    </div>
+
+    <div class="flex justify-center gap-4">
+      <img src="Mask group (1).png" alt="Beauty Image 1" class="w-40 md:w-52">
+      <img src="Image 2 (4).png" alt="Beauty Image 2" class="w-40 md:w-52">
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="mt-20 bg-sky-400 text-white py-10">
+    <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+      <div>
+        <img src="20.png" alt="20 years" class="mx-auto">
+        <p class="mt-3">Years of Experience</p>
+      </div>
+      <div>
+        <img src="769.png" alt="Clients" class="mx-auto">
+        <p class="mt-3">Satisfied Clients</p>
+      </div>
+      <div>
+        <img src="16.png" alt="Treatments" class="mx-auto">
+        <p class="mt-3">Skin Treatments</p>
+      </div>
+      <div>
+        <img src="50.png" alt="Experts" class="mx-auto">
+        <p class="mt-3">Trained Experts</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section class="container mx-auto px-6 md:px-12 mt-20 text-center">
+    <h1 class="text-sky-500 uppercase font-semibold">Meet the Doctors</h1>
+    <h2 class="text-3xl md:text-5xl font-bold mt-3">Discover Our Experts</h2>
+
+    <div class="grid md:grid-cols-3 gap-10 mt-10">
+      <div>
+        <img src="Image (1).png" alt="Dr. Hannah" class="mx-auto rounded-lg">
+        <h3 class="text-gray-500 mt-3">Plastic Surgeon</h3>
+        <h2 class="font-semibold">Dr. Hannah Wagner</h2>
+      </div>
+      <div>
+        <img src="Mask group (2).png" alt="Dr. Bryan" class="mx-auto rounded-lg">
+        <h3 class="text-sky-400 mt-3">Aesthesiologist</h3>
+        <h2 class="font-semibold">Dr. Bryan Hunter</h2>
+      </div>
+      <div>
+        <img src="Image (2).png" alt="Dr. Sarah" class="mx-auto rounded-lg">
+        <h3 class="text-gray-500 mt-3">Dermatologist</h3>
+        <h2 class="font-semibold">Dr. Sarah Nelson</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section class="container mx-auto px-6 md:px-12 mt-16">
+    <div class="flex flex-wrap justify-center items-center gap-8">
+      <img src="Item 1 (2).png" alt="">
+      <img src="Item 2.png" alt="">
+      <img src="Item 3.png" alt="">
+      <img src="Item 4.png" alt="">
+      <img src="Item 5.png" alt="">
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="container mx-auto px-6 md:px-12 mt-24 grid md:grid-cols-2 items-center gap-10">
+    <div>
+      <img src="Image (4).png" alt="Glow with us" class="rounded-lg">
+    </div>
+    <div class="bg-sky-300 p-8 md:p-12 rounded-2xl text-white">
+      <h1 class="text-4xl md:text-5xl font-bold">Ready to glow with us</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         <div>
-            <div>
-                <h1 class="text-sky-500">the beauty center</h1>
-                <h2 class="text-7xl">suitable for all <br>skin problems</h2>
-            </div>
-            <div class="flex gap-8 mt-7">
-                <button>BOOK NOW</button>
-                <h1 class="mt-1">OR</h1>
-                <img class="size-8" src="Play Video - Btn.png" alt="">
-            </div>
+          <p>Name</p>
+          <hr class="border-white/60 mt-2">
         </div>
-    </div>
-
-    <div class="ml-12 mr-12 mt-10">
-    
-     <p class="text-neutral-400">Care for skin and natural beauty through professional<br> treatments using natural products</p>
-           
-    </div>
-
-    <div class="ml-12 mr-12 mt-20">
         <div>
-            <div class="mt-80">
-                <h1 class="text-sky-400 ml-196">OUR SERVICES</h1>
-                <h2 class="text-6xl ml-112">Beauty Rituals of Our Offer</h2>
-            </div>
+          <p>Email</p>
+          <hr class="border-white/60 mt-2">
         </div>
-    </div>
- 
-
-
-
-
-    <div class="ml-12 mr-12 mt-32 justify-center flex gap-30">
         <div>
-            <div class="mt-10">
-                <img class="ml-18" src="1.png" alt="">
-            </div>
-            <div class="mt-5">
-                <h1 class="ml-20 mt-5 text-emerald-500">facial treatments</h1>
-                <p class="mt-5  text-neutral-500">Lorem ipsum dolor sit amet, consectetur</p>
-                <h2 class="ml-24  text-neutral-500">adipiscing elit.</h2>
-            </div>
+          <p>Date Appointment</p>
+          <hr class="border-white/60 mt-2">
         </div>
-
-        <div class="-mt-10 ">
-            <div>
-                <img class="ml-18" src="2.png" alt="">
-            </div>
-             <div class="mt-5">
-                <h1 class="ml-20 mt-5 text-indigo-500">Skin Tightening</h1>
-                <p class="mt-5  text-neutral-500">Lorem ipsum dolor sit amet, consectetur</p>
-                <h2 class="ml-24  text-neutral-500">adipiscing elit.</h2>
-                <h1 class="mt-5 ml-22  text-indigo-500">LEARN MORE</h1><hr class="w-30 ml-20">
-            </div>
-        </div>
-
-         <div class="mt-10">
-            <div>
-                <img class="ml-18" src="1.png" alt="">
-            </div>
-            <div class="mt-5">
-                <h1 class="ml-20 mt-5 text-cyan-500">Healthy Products</h1>
-                <p class="mt-5 text-neutral-500">Lorem ipsum dolor sit amet, consectetur</p>
-                <h2 class="ml-24 text-neutral-500">adipiscing elit.</h2>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div class="ml-12 mr-12 mt-96">
         <div>
-            <h1 class="text-sky-400 mt-5">about us</h1>
-            <h2 class="text-7xl mt-8">crafting beauty<br> beyond boundaries</h2>
-            <p class="text-neutral-500 mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p>Type of Service</p>
+          <hr class="border-white/60 mt-2">
         </div>
-        <button class="mt-5 bg-emerald-400">DISCOVER MORE</button>
+      </div>
+    </div>
+  </section>
 
-        <div class="flex -mt-96 ml-196 gap-5">
-            <img src="Mask group (1).png" alt="">
-            <img src="Image 2 (4).png" alt="">
-        </div>
+  <!-- Testimonials -->
+  <section class="container mx-auto px-6 md:px-12 mt-24 text-center">
+    <h1 class="text-sky-400 uppercase font-semibold">Testimonials</h1>
+    <h2 class="text-3xl md:text-5xl font-bold mt-3">From Our Satisfied Clients</h2>
+    <img src="botox.png" alt="Client" class="mx-auto mt-6 w-32 md:w-48">
+    <h3 class="text-sky-400 mt-4">Facial Treatment Client</h3>
+    <p class="text-gray-500 mt-6">
+      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+    </p>
+    <div class="flex justify-center gap-2 mt-4">
+      <img src="Star 5.png" alt="Star" class="h-5">
+      <img src="Star 5.png" alt="Star" class="h-5">
+      <img src="Star 5.png" alt="Star" class="h-5">
+      <img src="Star 5.png" alt="Star" class="h-5">
+      <img src="Star 5.png" alt="Star" class="h-5">
+    </div>
+    <h3 class="text-sky-500 font-semibold mt-3">Laura Johnson</h3>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="container mx-auto px-6 md:px-12 mt-24">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <h1 class="text-sky-500 uppercase font-semibold">Featured Post</h1>
+        <h2 class="text-4xl md:text-6xl font-bold">From Our Blog</h2>
+      </div>
+      <button class="mt-6 md:mt-0 border border-sky-500 text-sky-500 px-5 py-2 rounded-lg hover:bg-sky-500 hover:text-white transition">
+        Discover More
+      </button>
     </div>
 
-
-
-
-    <div class="ml-12 mr-12 mt-28">
-        <div class="flex justify-center  bg-sky-400 gap-46">
-            <div>
-                <img src="20.png" alt="">
-            <h1 class="mt-6 text-white">Years of Experience</h1>
-            </div>
-           <div>
-             <img src="769.png" alt="">
-            <h1 class="mt-6  text-white">satisfied clients</h1>
-           </div>
-           <div>
-             <img src="16.png" alt="">
-            <h1 class="mt-6  text-white">Skin treatments</h1>
-           </div>
-           <div>
-             <img src="50.png" alt="">
-            <h1 class="mt-6  text-white">Trained experts</h1>
-           </div>
-        </div>
+    <div class="grid md:grid-cols-3 gap-10 mt-10">
+      <div>
+        <img src="0000.png" alt="Blog 1" class="rounded-lg">
+        <h3 class="font-bold mt-4 text-lg">Unlocking The Secrets to Glowing Skin</h3>
+        <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div>
+        <img src="Image (6).png" alt="Blog 2" class="rounded-lg">
+        <h3 class="font-bold mt-4 text-lg">Revealing the Beauty Within</h3>
+      </div>
+      <div>
+        <img src="Image (7).png" alt="Blog 3" class="rounded-lg">
+        <h3 class="font-bold mt-4 text-lg">The New Agent of Skincare</h3>
+      </div>
     </div>
+  </section>
 
-
-
-
-
-    <div class="ml-12 mr-12 mt-28">
-        <div class="ml-128">
-            <h1 class="text-sky-500 ml-52 mt-4">meet the doctors</h1>
-            <h2 class="text-6xl">Discover our experts</h2>
-        </div>
-
-        <div class="flex gap-20 ml-68 mt-20">
-           <div>
-             <img src="Image (1).png" alt="">
-            <h1 class="text-neutral-500 ml-20 mt-3">Plastic Surgeon</h1>
-            <h2 class="ml-20">Dr. Hannah Wagner</h2>
-           </div>
-           <div>
-             <img src="Mask group (2).png" alt="">
-            <h1 class="text-sky-400 ml-20 mt-3">Aesthesiologist</h1>
-            <h2 class="ml-20">Dr. Bryan Hunter</h2>
-           </div>
-            <div>
-            <img src="Image (2).png" alt="">
-            <h1 class="text-neutral-500 ml-22 mt-3">dermatologist</h1>
-            <h2 class="ml-20">Dr. Sarah Nelson</h2>
-            </div>
-        </div>
+  <!-- Footer -->
+  <footer class="bg-sky-300 text-white mt-24 py-12">
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-10">
+      <div>
+        <img src="Large Logo.png" alt="Logo" class="h-12">
+        <p class="mt-4 text-white/80">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+      <div>
+        <h2 class="font-semibold mb-3">We’re open at</h2>
+        <img src="ppppp.png" alt="Open Hours">
+      </div>
+      <div>
+        <h2 class="font-semibold mb-3">Get in touch with us</h2>
+        <img src="Info.png" alt="Contact Info">
+      </div>
     </div>
+  </footer>
 
-    <div class="ml-12 mr-12 mt-28 justify-center">
-        <div class="flex gap-10 ml-36">
-            <img src="Item 1 (2).png" alt="">
-            <img src="Item 2.png" alt="">
-            <img src="Item 3.png" alt="">
-            <img src="Item 4.png" alt="">
-            <img src="Item 5.png" alt="">
-        </div>
-    </div>
-
-
-    <div class="ml-27 mr-12 mt-52">
-        <div>
-             <div>
-            <img src="Image (4).png" alt="">
-        </div>
-        </div>
-    </div>
-
-    <div class="ml-196 -mt-144">
-        <div class=" ml-12 mr-12 mt-28 bg-sky-300 w-128  h-128">
-       
-        <div class="mt-20">
-            <h1 class="text-7xl text-white ml-4">ready to glow with us</h1>
-        </div>
-        <div class="flex gap-24">
-            <div class="mt-4 ml-4">
-                <h1 class="text-white">Name</h1><hr class="size-48">
-            </div>
-           
-        <div class="mt-4">
-            <h1 class="text-white">Email</h1><hr class="size-48 ">
-            
-        </div>
-        </div>
-
-        <div class=" flex gap-24">
-            <div class="ml-4">
-                <h1 class="text-white">Date Appointment</h1><hr class="size-48">
-            </div>
-            <div>
-                <h1 class="text-white">Type of Service</h1><hr class="size-48">
-            </div>
-           
-        </div>
-    </div>
-    </div>
-    
-
-
-
-
-    <div class="mt-30 ml-12 mr-12">
-        <div>
-            <div class="ml-128">
-                <h1 class="text-sky-400 mt-6 ml-66">Testimonials</h1>
-                <p class="text-6xl mt-4">from our satisfied client</p>
-                <img class="mt-6 ml-70" src="botox.png" alt="">
-                <h1 class="text-sky-400 mt-4 ml-56">facial treatment client</h1>
-                <p class="text-neutral-500 mt-6">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip<br> ex ea commodo consequat”</p>
-            </div>
-            <div class="flex ml-196 mt-5">
-                <img src="Star 5.png" alt="">
-                <img src="Star 5.png" alt="">
-                <img src="Star 5.png" alt="">
-                <img src="Star 5.png" alt="">
-                <img src="Star 5.png" alt="">
-            </div>
-            <div>
-                <h1 class="text-sky-500 ml-196 mt-3">laura johnson</h1><hr class="w-28 ml-196 mt-4">
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="ml-12 mr-12 mt-30">
-        <div>
-            <div class="ml-20">
-                <h1 class="text-sky-500">Featured post</h1>
-                <h2 class="text-7xl">From Our Blog</h2>
-            </div>
-            <div class="-my-10">
-                <button class="ml-296 border-1">DISCOVER MORE</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="ml-12 mr-12 mt-32 gap-20">
-        <div>
-            <div class="ml-196">
-                <img src="Image (6).png" alt="">
-                <h1 class="mt-4">Revealing the beauty within ...</h1>
-            </div>
-            <div class="ml-196 mt-7">
-                <img src="Image (7).png" alt="">
-                <h2 class="mt-4">The New Agent Of skincare in ...</h2>
-            </div>
-            <div class="ml-3 -mt-124">
-                <img src="0000.png" alt="">
-                <h1 class="mt-6">Unlocking The secrets to glowing skin : essential skincare tips</h1>
-                <p class="text-neutral-500 mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.</p><hr class="w-162 mt-6">
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="flex ml-12 mr-12 mt-32 bg-sky-300 h-72 gap-32">
-        <div class="mt-24">
-            <div class="ml-32">
-                <div>
-                    <img src="Large Logo.png" alt="">
-                </div>
-                <p class="text-white mt-4">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            </div>
-        </div>
-
-        <div class="mt-20">
-            <div>
-                <h1 class="text-white mt-5">we’re open at</h1>
-            </div>
-            <div>
-                <img class="mt-6" src="ppppp.png" alt="">
-            </div>
-        </div>
-
-        <div class="mt-22">
-            <div>
-                <div>
-                    <h1 class="text-white">get in touch with us</h1>
-                </div>
-                <div>
-                    <img class="mt-6" src="Info.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
